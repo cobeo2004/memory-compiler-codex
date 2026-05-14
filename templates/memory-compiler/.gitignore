@@ -1,0 +1,12 @@
+/.venv/
+/daily/*.md
+!/daily/.gitkeep
+/knowledge/concepts/*.md
+!/knowledge/concepts/.gitkeep
+/knowledge/connections/*.md
+!/knowledge/connections/.gitkeep
+/knowledge/qa/*.md
+!/knowledge/qa/.gitkeep
+/scripts/*.log
+/scripts/session-flush-*.md
+__pycache__/

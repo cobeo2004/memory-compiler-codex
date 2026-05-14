@@ -1,0 +1,25 @@
+[project]
+name = "memory-compiler-codex"
+version = "0.1.0"
+description = "Codex hook adapter for memory-compiler Python hooks"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+memory-compiler-codex = "memory_compiler_codex.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/memory_compiler_codex"]
